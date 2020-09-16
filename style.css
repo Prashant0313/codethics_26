@@ -1,0 +1,258 @@
+     *{
+	margin: 0;
+	padding: 0;
+	font-family: century gothic;
+   box-sizing: border-box;
+
+}
+header{
+	background-image: url(../image/background.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #00BFFF;
+	padding: 5px 20px;
+	border: 1px solid text-shadow: blur rgba(0, 0, 0, .5);
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #81F7BE;
+	color: #045FB4;
+}
+.logo h1{
+	color: #00BFFF;
+	margin-left:20px;
+	border: 9px;
+}
+.glow{ 
+	position: absolute;
+	top: 350px;
+	left: 450px;
+	transform: translate(-50px,-50px);
+}
+.glow h1{
+	color: #00BFFF; 
+	font-size: 40px;
+}
+.button{
+	position: absolute;
+	top: 430px;
+	left: 600px;
+	transform: translate(-50px,-50px);
+}
+/*.btn{
+	border: 2px;
+	padding: 10px 30px;
+	color: #1ea;
+	font-size: 20px;
+	text-decoration: none;
+	transition: 0.9s ease;
+}
+.btn:hover{
+	background-color: #81F7BE;
+	color: #045FB4;
+}*/
+
+.loading_wrap ul{
+	position: absolute;
+	top: 80%;
+	left: 60%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.loading_wrap ul li{
+	list-style: none;
+	width: 30px;
+	height:30px;
+	background: #fff;
+	border-radius: 100%;
+	animation: grow 4s ease-in-out infinite;
+
+}
+@keyframes grow{
+0%,     50%,  100%  {
+	transform: scale(0.2);
+	} 
+	50%{
+		transform: scale(1);
+	}
+}
+.loading_wrap ul li:nth-child(1){
+	animation-delay: -1.4s;
+	background:#00BFFF;
+	box-shadow: 0 0 50px  #00BFFF;
+}
+.loading_wrap ul li:nth-child(2){
+	animation-delay: -1.1s;
+	background: #00BFFF;
+	box-shadow: 0 0 50px #00BFFF;
+}
+.loading_wrap ul li:nth-child(3){
+	animation-delay: -0.8s;
+	background:  #00BFFF;
+	box-shadow: 0 0 50px #00BFFF ;
+}
+.loading_wrap ul li:nth-child(4){
+	animation-delay: -0.5s;
+	background: #00BFFF;
+	box-shadow: 0 0 50px #00BFFF;
+}
+.loading_wrap ul li:nth-child(5){
+	animation-delay: -0.2s;
+	background: #00BFFF;
+	box-shadow: 0 0 50px #00BFFF;
+}
+.loading_wrap ul li:nth-child(6){
+	animation-delay: -00.1s;
+	background:#00BFFF;
+	box-shadow: 0 0 50px #00BFFF;
+}
+.loading_wrap ul li:nth-child(7){
+	animation-delay: -0.004s;
+	background: #00BFFF;
+	box-shadow: 0 0 50px #00BFFF;
+}
+.loading_wrap ul li:nth-child(8){
+	animation-delay: -0.007s;
+	background: #00BFFF;
+	box-shadow: 0 0 50px #00BFFF;
+}
+.loading_wrap ul li:nth-child(9){
+	animation-delay: 0.0001s;
+	background: #00BFFF;
+	box-shadow: 0 0 50px #00BFFF;
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+ Responsive layout - makes a two column-layout instead of four columns 
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.about_column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .about_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/*.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}*/
+
+/*.button:hover {
+  background-color: #555;
+}*/
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #fff;
+   color: #000;
+}
